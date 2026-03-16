@@ -1,6 +1,6 @@
 # ex of all oops
 
-# en
+# encapsulation
 class BankAccount:
     def __init__(self,balance):
         self.__balance = balance #data is hiding using __balance
@@ -10,7 +10,19 @@ class BankAccount:
 df = BankAccount(5000)
 print(df.get_balance())
 
-# In
+
+class ATM:
+    def __init__(self,bank):
+        self.__bank = bank  #data is hiding using __bank
+
+
+    def get_money(self):
+        return self.__bank
+atm = ATM(50000)
+print(atm.get_money())   
+
+
+# Inheritance
 
 class Animal:   # parent class
     def eat(self):
@@ -24,7 +36,18 @@ d.eat()
 d.bark()
 
 
-# po
+class Tata:
+    def rangerover(self):
+        print("laxuary brand:")
+class nexon(Tata):
+    def heriar(self):
+        print("Harrier is a SUV")
+n = nexon()
+n.rangerover()
+n.heriar
+
+
+# polimorphisam
 class cars:
     def sound(self):
         print("cars are running")
@@ -49,3 +72,30 @@ g = TATA()
 a.sound()
 f.sound()
 g.sound()
+
+
+class animal:
+    def speak(self):
+        print("animal speaking")
+
+class dog(animal):
+    def speak(self):
+        print("dog is barking")
+
+class cat(animal):
+    def speak(self):
+        print("cat is meowing")
+# objects
+A = animal()
+D = dog()
+C = cat()
+
+# cal sound method
+A.speak()
+D.speak()
+C.speak()
+
+
+
+
+

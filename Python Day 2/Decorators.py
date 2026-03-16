@@ -132,6 +132,20 @@ class circle:
         return cls(1)
     
 
+# decoretor
+
+def myfun(fun):
+    def hey():
+        print("before")
+        fun()
+        print("after")
+    return hey
+
+@myfun
+def hi(hi):
+    print(f"hello {hi}")
+    return hi("ram")
+    # return hi("ram")
 
 
 
