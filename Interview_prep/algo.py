@@ -101,8 +101,6 @@ for i in range(2,nu):
 else:
         print("Is Prime")
 
-# 
-
 
 
 
