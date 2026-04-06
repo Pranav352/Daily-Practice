@@ -101,6 +101,53 @@ for i in range(2,nu):
 else:
         print("Is Prime")
 
+# count character frequency in string
+
+string = "hello"
+
+frequency = {}
+
+for char in string:
+    frequency[char] =frequency.get(char,0)+1
+
+print(frequency)
+
+# find second largest number in list
+
+lis = [100,400,600,200400]
+lis.sort()
+print(lis[-2])
+
+# merge two dictionaries
+
+a1={"a":1,"b":2}
+b2={"c":3,"d":4}
+
+merge = {**a1,**b2}
+print(merge)
+
+# sum of element in list
+
+ele = [1,2,3,4]
+
+print(sum(ele))
+
+
+# find missing number in list
+i = [1,2,3,4,5,6,8]
+
+n = 8
+
+missing_num = n*(n+1)//2 - sum(i)
+
+print(missing_num)
+
+
+
+
+
+
+
 
 
 
